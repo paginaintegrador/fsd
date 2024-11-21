@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Prof. Jorge de la Reta</title>
+    <!-- Fuentes modernas de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar FontAwesome para el ícono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header con Menú y Barra de Contacto -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#escuela">LA ESCUELA</a></li>
+                <li><a href="#niveles">NIVELES EDUCATIVOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="https://discord.com/invite/A4VhMAUqvJ" target="_blank">DISCORD</a></li>
+            </ul>
+        </nav>
+        <div class="header-contact">
+            <span>Email:  escueladelareta@gmail.com</span> |
+            <span>Teléfono: +54 (260) 443-0310</span> |
+            <span>Dirección: Deoclesio García  191</span>
+        </div>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section id="inicio" class="carousel">
+        <div class="carousel-images">
+            <img src="1.png" alt="Imagen 1">
+            <img src="2.png" alt="Imagen 2">
+            <img src="3.png" alt="Imagen 3">
+        </div>
+        <div class="carousel-overlay">
+            <h1>Prof. Jorge de la Reta</h1>
+            <a href="#propuesta" class="btn">Conoce nuestra propuesta</a>
+        </div>
+    </section>
+
+    <!-- Sección con Botones e Información Emergente -->
+    <section class="info-buttons">
+        <div class="info-card">
+            <img src="robotica.jpg" alt="Robótica">
+            <button class="info-btn" onclick="showInfo('robotica')">Robótica</button>
+            <div id="robotica" class="info-popup">
+                <p>La robótica es el arte de diseñar y construir robots. Imagina mezclar mecánica, electrónica y programación para crear máquinas que pueden ayudar en la medicina, explorar otros planetas o hacer tareas del hogar. ¡Es como ser un inventor del futuro!</p>
+                <button onclick="closeInfo('robotica')">Cerrar</button>
+            </div>
+        </div>
+        <div class="info-card">
+            <img src="programacion.jpg" alt="Programación">
+            <button class="info-btn" onclick="showInfo('programacion')">Programación</button>
+            <div id="programacion" class="info-popup">
+                <p>La programación es como aprender un nuevo idioma, ¡pero para hablar con computadoras! Puedes crear desde aplicaciones móviles hasta videojuegos. Es una habilidad súper útil en casi cualquier carrera y es muy divertida si te gusta resolver problemas y ser creativo.</p>
+                <button onclick="closeInfo('programacion')">Cerrar</button>
+            </div>
+        </div>
+        <div class="info-card">
+            <img src="web.jpg" alt="Desarrollo Web">
+            <button class="info-btn" onclick="showInfo('webs')">Webs</button>
+            <div id="webs" class="info-popup">
+                <p>El desarrollo web consiste en crear sitios y aplicaciones para la web. Puedes diseñar y programar páginas que millones de personas verán y usarán cada día. Es una combinación de creatividad y técnica, ideal para quienes les encanta ver sus ideas cobrar vida en la pantalla.</p>
+                <button onclick="closeInfo('webs')">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="escuela" class="about-us">
+        <h2>SOBRE NOSOTROS</h2>
+        <p> <br>NUEVO SECUNDARIO: "TÉCNICO EN PROGRAMACIÓN" </br>
+        </br>HORARIO: TURNO MAÑANA Y TARDE</br>
+    </br> ACTIVIDADES EN FORMATO BIMODAL (ORIENTADAS HACIA EL AUTOAPRENDIZAJE)</br> 
+    </br>DOS PLATAFORMAS EDUCATIVAS (ESCUELA DIGITAL Y CLAROLINE)</br>
+    </br> PÁGINA WEB Y REDES SOCIALES </br>
+    </br>TALLERES COMPLEMENTARIOS EN ELECTRICIDAD, VIDEOJUEGOS, PROGRAMACIÓN Y ROBÓTICA, ARDUINO, IMPRESIÓN 3D, APP INVENTOR, OTROS</br>   
+    </br> ATENCIÓN PROFESIONAL EDUCATIVA DE CALIDAD </br>
+    </br>PROYECTOS DE BASE TECNOLÓGICA</br></p>
+    </section>
+
+    <!-- Sección de Fotos al Lado -->
+    <section class="photos">
+        <div class="photo-item">
+            <img src="img1.jpeg" alt="Foto 1">
+            <p>MUESTRA PROVINCIAL DE PROGRAMACIÓN Y ROBOTICA - SUMO DE ROBOTS</p>
+        </div>
+        <div class="photo-item">
+            <img src="img2.jpeg" alt="Foto 2">
+            <p>PROGRAMACIÓN (BASE DEL FUTURO)</p>
+        </div>
+        <div class="photo-item">
+            <img src="img3.jpeg" alt="Foto 3">
+            <p>ABP: AUTOMATIZACIÓN DE INVERNADEROS EN ZONAS RURALES</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="contact-form" style="background-color: #2d4d03f5;">
+        <h2>Completa el formulario de contacto</h2>
+        <a href="https://forms.gle/ejemplo" class="btn">Ir al Formulario</a>
+    </section>
+
+    <!-- Sección de Convenios y Reconocimientos -->
+    <section class="convenios">
+        <h2>CONVENIOS Y RECONOCIMIENTOS</h2>
+        <ul>
+            <li>PARTICIPAMOS RECIENTEMEMNTE EN LA PRELIGA NACIONAL DE ROBÓTICA - UTN LOS REYUNOS, </li>
+            <li>ARTICULAMOS CON TALLERES DIVERSOS EN ESCUELAS PRIMARIAS 
+            <li>APLICAMOS EN DIFERENTES AÑOS TALLERES DE ELECTRICIDAD, ARDUINO, VIDEOJUEGOS, BASE DE DATOS E IMPRESIÓN 3D</li>
+            <li>HACEMOS REUNIONES Y CHARLAS CON DIFERENTES ESPECIALISTAS VINCULADOS AL RUBRO TECNOLÓGICO</li>
+            <li>PROMOVEMOS TALENTOS TECNOLÓGICOS </li>
+            <li>TRABAJAMOS PARA CONFORMAR LA RED TECNOLOGICA EDUCATIVA</li> 
+            <li>REALIZAMOS PROYECTOS CON ALCANCE COMUNITARIO</li>
+            <li>SOMOS MIEMBRO DEL POLO DE INNOVACIÓN TECNOLÓGICA REGIÓN SUR MENDOZA</li>
+            <li>PARTICIPAMOS EN DIFERENTES PROGRAMAS NACIONALES DE PROGRAMACIÓN Y ROBÓTICA </li>
+            <li>UTILIZAMOS BIMODALIDAD YA QUE CONTAMOS CON PLATAFORMA EDUCATIVA PROPIA.</li>
+            <li>APLICAMOS EN DIFERENTES AÑOS TALLERES DE ELECTRICIDAD, ARDUINO, VIDEOJUEGOS, BASE DE DATOS E IMPRESIÓN 3D</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Transformación Digital Educativa -->
+    <section class="transformacion-digital">
+        <h2>TRANSFORMACIÓN DIGITAL EDUCATIVA</h2>
+        <a href="transformacion-digital.html" class="btn">Más información</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Escuela 4-130 | Todos los derechos reservados</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/2604430310" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Función para mostrar la ventana emergente
+        function showInfo(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        // Función para cerrar la ventana emergente
+        function closeInfo(id) {
+            document.getElementById(id).style.display = 'none';
+        }  // YA SE QUE ESTO NO DEBERIA ESTAR ACA PERO SOY UN VAGO Y NO VOY A CONECTAR UN ARCHIVO DE SCRIPTS QUE TIENE 2 PARRAFOS SOLAMENTE
+    </script>
+</body>
+</html>
